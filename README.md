@@ -15,9 +15,9 @@ With over 10 years of experience in the field, I am dedicated to supporting your
 
 ## Contact Information
 
-- **Phone**: (123) 456-7890
-- **Email**: [contact@evanfinnamorecounselling.com](mailto:contact@evanfinnamorecounselling.com)
-- **Address**: 123 Wellness Ave, Mindful City, Country
+- **Phone**: (604) 897-9106
+- **Email**: [evan.finnamore@gmail.com](mailto:evan.finnamore@gmail.com)
+- **Address**: 123 Wellness Ave, Mindful City, Canada
 
 *I look forward to working with you.*
 
