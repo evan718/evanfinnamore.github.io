@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    <h1>[Your Name] Counselling Services</h1>
+    <h1>[Evan Finnamore] Counselling Services</h1>
     <nav>
       <ul>
           <li><a href="./index.html">Home</a></li>
