@@ -3,7 +3,7 @@
     <h1>[Your Name] Counselling Services</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/evan718.github.io/evanfinnamore.github.io/index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="appointment.html">Book Appointment</a></li>
