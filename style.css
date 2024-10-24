@@ -117,7 +117,18 @@ img {
   display: block;
 }
 
-/* Bio text styling */
+/* Bio sections styling */
+.bio-section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.bio-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -125,17 +136,17 @@ img {
   width: 100%;
 }
 
-/* Responsive design for about page */
-@media (max-width: 768px) {
-  .profile-image {
-    max-width: 250px;
-  }
-  
-  .about-content {
-    padding: 0 1rem;
-  }
+.expertise-list, .credentials-list {
+  list-style: none;
+  padding-left: 0;
 }
 
+.expertise-list li, .credentials-list li {
+  background-color: var(--white);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
 }
 
 /* Links page */
@@ -198,19 +209,31 @@ footer p {
     flex-direction: column;
     text-align: center;
   }
-
+  
   nav ul {
     margin-top: 1rem;
     justify-content: center;
     gap: 1rem;
   }
-
+  
   h1 {
     font-size: 1.5rem;
   }
-
+  
   main {
     padding: 2rem 0;
+  }
+  
+  .profile-image {
+    max-width: 250px;
+  }
+  
+  .about-content {
+    padding: 0 1rem;
+  }
+  
+  .bio-section h3 {
+    font-size: 1.2rem;
   }
 }
 
