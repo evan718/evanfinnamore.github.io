@@ -98,6 +98,46 @@ img {
   box-shadow: var(--shadow);
 }
 
+/* About page specific styles */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Bio text styling */
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+}
+
+/* Responsive design for about page */
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 250px;
+  }
+  
+  .about-content {
+    padding: 0 1rem;
+  }
+}
+
+}
+
 /* Links page */
 main ul {
   list-style: none;
