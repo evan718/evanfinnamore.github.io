@@ -55,7 +55,40 @@
             color: #1a365d;
         }
 
-        /* Rest of your existing styles */
+        /* Article Content Styles */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .article-content h1, .article-content h2, .article-content h3 {
+            color: #2b4c7e;
+        }
+
+        .article-content p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            background-color: #f9f9f9;
+            border-left: 4px solid #2b4c7e;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .model-diagram {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .model-diagram img {
+            max-width: 100%;
+            height: auto;
+        }
+
         .approach-card {
             background: #ffffff;
             border-radius: 8px;
@@ -63,8 +96,22 @@
             margin: 1.5rem 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        
-        /* ... (rest of your existing styles) ... */
+
+        .approach-card h3 {
+            margin-top: 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #f1f1f1;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #555555;
+        }
     </style>
 </head>
 <body>
@@ -83,17 +130,96 @@
     </header>
 
     <main>
-        <!-- Rest of your content remains the same -->
+        <!-- Article Content -->
         <div class="container">
             <article class="article-content">
                 <h1>Understanding and Managing Depression</h1>
                 
                 <div class="quick-help">
-                    <!-- Emergency support section -->
-                    <!-- ... rest of your content ... -->
+                    <p>If you're experiencing severe symptoms or thoughts of self-harm, please reach out to a mental health professional immediately or call emergency services.</p>
                 </div>
 
-                <!-- ... rest of your sections ... -->
+                <section>
+                    <h2>What is Depression?</h2>
+                    <p>Depression is more than just feeling sad or going through a rough patch. It's a serious mental health condition that affects how you feel, think, and handle daily activities.</p>
+                </section>
+
+                <section>
+                    <h2>Cognitive Behavioral Therapy (CBT) Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Understanding Thoughts, Feelings, and Behaviors</h3>
+                        <p>CBT suggests that our thoughts, feelings, and behaviors are interconnected. Negative thought patterns can lead to depressive feelings and unhelpful behaviors.</p>
+                        <div class="model-diagram">
+                            <img src="../images/cbt-model.png" alt="CBT Model Diagram">
+                            <p><em>CBT Model: Thoughts ↔ Feelings ↔ Behaviors</em></p>
+                        </div>
+                        <div class="quote">
+                            <p>"The mind is everything. What you think you become." - Buddha</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Think of your mind as a pair of glasses with tinted lenses. If the lenses are dark, everything you see appears gloomy. By changing the lenses (thoughts), the world appears brighter.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Psychodynamic Therapy Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Exploring the Unconscious Mind</h3>
+                        <p>Psychodynamic therapy focuses on unconscious processes manifested in behavior. It aims to help you understand the influence of past experiences on current feelings and behaviors.</p>
+                        <div class="quote">
+                            <p>"Until you make the unconscious conscious, it will direct your life and you will call it fate." - Carl Jung</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Imagine your mind as an iceberg, with only a small part visible above the water (conscious mind) and a much larger part hidden below (unconscious mind). Understanding the submerged part can help you navigate your feelings better.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Humanistic Therapy Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Emphasizing Personal Growth</h3>
+                        <p>Humanistic therapy centers on the individual's capacity for self-realization and emphasizes personal growth and self-fulfillment.</p>
+                        <div class="quote">
+                            <p>"What a man can be, he must be. This need we call self-actualization." - Abraham Maslow</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Consider yourself as a seed with the potential to become a strong tree. With the right conditions (support, understanding), you can grow to your fullest potential.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Mindfulness-Based Therapy Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Living in the Present Moment</h3>
+                        <p>Mindfulness-based therapy encourages being present and fully engaged in the current moment, helping to reduce the impact of negative thoughts.</p>
+                        <div class="quote">
+                            <p>"The present moment is filled with joy and happiness. If you are attentive, you will see it." - Thich Nhat Hanh</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Thoughts are like clouds passing through the sky. You are the sky, vast and unchanging, while thoughts come and go.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Practical Strategies for Managing Depression</h2>
+                    <ul>
+                        <li><strong>Challenging Negative Thoughts:</strong> Use CBT techniques to identify and reframe unhelpful thought patterns.</li>
+                        <li><strong>Expressive Writing:</strong> Journaling can help explore unconscious feelings as suggested by psychodynamic therapy.</li>
+                        <li><strong>Mindfulness Exercises:</strong> Practice mindfulness meditation to stay grounded in the present moment.</li>
+                        <li><strong>Self-Compassion:</strong> Be kind to yourself, recognizing that everyone struggles at times.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Additional Resources</h2>
+                    <p>For more information and support, consider exploring the following:</p>
+                    <ul>
+                        <li><a href="https://www.nimh.nih.gov/health/topics/depression/index.shtml">National Institute of Mental Health: Depression</a></li>
+                        <li><a href="https://www.headspace.com/">Headspace: Mindfulness and Meditation</a></li>
+                        <li><a href="https://www.psychologytoday.com/">Psychology Today: Find a Therapist</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Final Thoughts</h2>
+                    <p>Remember, overcoming depression is a journey, and it's okay to ask for help along the way. You're not alone, and resources are available to support you.</p>
+                </section>
             </article>
         </div>
     </main>
