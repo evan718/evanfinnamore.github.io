@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive mental health resources and evidence-based information">
     <title>Mental Health Resources | Evan Finnamore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mental Health Resources</h1>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="site-title">Mental Health Resources</a>
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="resources.html" aria-current="page">Resources</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,72 +26,120 @@
 
     <main>
         <div class="container">
-            <h2>Mental Health Resources</h2>
-            <p>Access comprehensive, evidence-based information about various mental health topics. Each article includes theoretical frameworks, practical strategies, and relevant Canadian support resources.</p>
-
-            <section id="anxiety" class="resource-section">
-                <h3>Anxiety Resources</h3>
-                <div class="article-grid">
-                    <a href="articles/anxiety-overview.html" class="article-card">
-                        <h4>Understanding Anxiety</h4>
-                        <p>Explore anxiety through evolutionary, cognitive, and therapeutic perspectives</p>
-                        <span class="read-more">Read More →</span>
-                    </a>
+            <section class="intro-section">
+                <h1>Mental Health Resources & Support</h1>
+                <p class="lead">Access evidence-based information, practical coping strategies, and professional support services. These resources are carefully curated to provide reliable information and guidance for various mental health concerns.</p>
+                
+                <div class="emergency-resources">
+                    <div class="info-box emergency-box">
+                        <h2>Need Immediate Help?</h2>
+                        <p><strong>24/7 Crisis Support:</strong></p>
+                        <ul>
+                            <li>Crisis Services Canada: <a href="tel:1-833-456-4566">1-833-456-4566</a></li>
+                            <li>Emergency Services: <a href="tel:911">911</a></li>
+                            <li>BC Crisis Line: <a href="tel:1-800-784-2433">1-800-784-2433</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section id="depression" class="resource-section">
-                <h3>Depression Resources</h3>
-                <div class="article-grid">
-                    <a href="articles/depression-overview.html" class="article-card">
-                        <h4>Understanding Depression</h4>
-                        <p>Learn about depression through neuroscience and evidence-based treatments</p>
-                        <span class="read-more">Read More →</span>
-                    </a>
-                </div>
+            <section class="resources-grid">
+                <article class="resource-section">
+                    <h2>Anxiety Resources</h2>
+                    <div class="article-grid">
+                        <div class="article-card">
+                            <h3>Understanding Anxiety</h3>
+                            <p>Explore evidence-based approaches to managing anxiety and panic.</p>
+                            <ul class="resource-links">
+                                <li><a href="articles/anxiety-overview.html">Comprehensive Anxiety Guide</a></li>
+                                <li><a href="https://anxietycanada.com" target="_blank" rel="noopener">Anxiety Canada</a></li>
+                                <li><a href="https://www.heretohelp.bc.ca/anxiety" target="_blank" rel="noopener">Here to Help BC - Anxiety Resources</a></li>
+                            </ul>
+                            <a href="articles/anxiety-overview.html" class="read-more">Read Full Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-section">
+                    <h2>Depression Support</h2>
+                    <div class="article-grid">
+                        <div class="article-card">
+                            <h3>Managing Depression</h3>
+                            <p>Access tools and strategies for coping with depression.</p>
+                            <ul class="resource-links">
+                                <li><a href="articles/depression-overview.html">Depression Management Guide</a></li>
+                                <li><a href="https://mdsc.ca" target="_blank" rel="noopener">Mood Disorders Society of Canada</a></li>
+                                <li><a href="https://www.camh.ca/depression" target="_blank" rel="noopener">CAMH Depression Resources</a></li>
+                            </ul>
+                            <a href="articles/depression-overview.html" class="read-more">Read Full Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-section">
+                    <h2>Grief and Loss</h2>
+                    <div class="article-grid">
+                        <div class="article-card">
+                            <h3>Processing Grief</h3>
+                            <p>Find support and understanding through the grieving process.</p>
+                            <ul class="resource-links">
+                                <li><a href="articles/grief-loss.html">Understanding Grief Guide</a></li>
+                                <li><a href="https://www.bcbh.ca" target="_blank" rel="noopener">BC Bereavement Helpline</a></li>
+                                <li><a href="https://www.virtualhospice.ca" target="_blank" rel="noopener">Canadian Virtual Hospice</a></li>
+                            </ul>
+                            <a href="articles/grief-loss.html" class="read-more">Read Full Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-section">
+                    <h2>Substance Use Support</h2>
+                    <div class="article-grid">
+                        <div class="article-card">
+                            <h3>Recovery Resources</h3>
+                            <p>Access support for substance use and recovery pathways.</p>
+                            <ul class="resource-links">
+                                <li><a href="articles/substance-use-support.html">Substance Use Guide</a></li>
+                                <li><a href="https://www.ccsa.ca" target="_blank" rel="noopener">Canadian Centre on Substance Use</a></li>
+                                <li><a href="https://www.bcmhsus.ca" target="_blank" rel="noopener">BC Mental Health & Substance Use Services</a></li>
+                            </ul>
+                            <a href="articles/substance-use-support.html" class="read-more">Read Full Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-section">
+                    <h2>Relationship Support</h2>
+                    <div class="article-grid">
+                        <div class="article-card">
+                            <h3>Building Healthy Relationships</h3>
+                            <p>Discover strategies for strengthening relationships and managing conflicts.</p>
+                            <ul class="resource-links">
+                                <li><a href="articles/marriage-issues.html">Relationship Guide</a></li>
+                                <li><a href="https://www.gottman.com" target="_blank" rel="noopener">The Gottman Institute</a></li>
+                                <li><a href="https://www.bccouplesfamilycounselling.com" target="_blank" rel="noopener">BC Couples & Family Counselling</a></li>
+                            </ul>
+                            <a href="articles/marriage-issues.html" class="read-more">Read Full Article →</a>
+                        </div>
+                    </div>
+                </article>
             </section>
 
-            <section id="grief" class="resource-section">
-                <h3>Grief and Loss Resources</h3>
-                <div class="article-grid">
-                    <a href="articles/grief-loss.html" class="article-card">
-                        <h4>Coping with Grief and Loss</h4>
-                        <p>Understanding grief through research-supported models and approaches</p>
-                        <span class="read-more">Read More →</span>
-                    </a>
-                </div>
-            </section>
-
-            <section id="substance-use" class="resource-section">
-                <h3>Substance Use Resources</h3>
-                <div class="article-grid">
-                    <a href="articles/substance-use-support.html" class="article-card">
-                        <h4>Understanding Substance Use</h4>
-                        <p>Evidence-based information about substance use and recovery paths</p>
-                        <span class="read-more">Read More →</span>
-                    </a>
-                </div>
-            </section>
-
-            <section id="marriage" class="resource-section">
-                <h3>Marriage Resources</h3>
-                <div class="article-grid">
-                    <a href="articles/marriage-issues.html" class="article-card">
-                        <h4>Marriage Issues</h4>
-                        <p>Research-based approaches to common relationship challenges</p>
-                        <span class="read-more">Read More →</span>
-                    </a>
-                </div>
-            </section>
-
-            <section class="crisis-resources">
-                <h3>Crisis Resources</h3>
-                <div class="info-box emergency-box">
-                    <p><strong>24/7 Support Services:</strong></p>
+            <section class="additional-resources">
+                <h2>Professional Support Services</h2>
+                <div class="info-box">
+                    <h3>Finding Professional Help</h3>
                     <ul>
-                        <li>Crisis Services Canada: 1-833-456-4566</li>
-                        <li>Emergency Services: 911</li>
-                        <li>Canadian Mental Health Association: <a href="https://cmha.ca" target="_blank">www.cmha.ca</a></li>
+                        <li><a href="https://www.psychologytoday.com/ca" target="_blank" rel="noopener">Psychology Today Therapist Directory</a></li>
+                        <li><a href="https://www.bc-counsellors.org" target="_blank" rel="noopener">BC Association of Clinical Counsellors</a></li>
+                        <li><a href="https://www.cmha.bc.ca" target="_blank" rel="noopener">Canadian Mental Health Association - BC Division</a></li>
+                    </ul>
+
+                    <h3>Self-Help Resources</h3>
+                    <ul>
+                        <li><a href="https://www.bouncebackbc.ca" target="_blank" rel="noopener">BounceBack BC - Free Mental Health Program</a></li>
+                        <li><a href="https://wellnesstogether.ca" target="_blank" rel="noopener">Wellness Together Canada</a></li>
+                        <li><a href="https://www.mindbeacon.com" target="_blank" rel="noopener">MindBeacon - Online Therapy</a></li>
                     </ul>
                 </div>
             </section>
@@ -98,7 +147,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
