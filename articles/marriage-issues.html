@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Navigation Styles */
+        /* Navigation Styles (Reverted to Previous Version) */
         .header {
             background-color: #ffffff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -84,10 +84,22 @@
             margin: 2rem 0;
         }
 
+        /* Adjusted Styles for Mermaid Diagram */
         .model-diagram pre {
             text-align: left;
             display: block;
             overflow-x: auto;
+        }
+
+        .mermaid {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .model-diagram .mermaid {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .approach-card {
