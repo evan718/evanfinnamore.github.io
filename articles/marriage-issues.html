@@ -86,7 +86,8 @@
 
         .model-diagram pre {
             text-align: left;
-            display: inline-block;
+            display: block;
+            overflow-x: auto;
         }
 
         .approach-card {
@@ -116,7 +117,7 @@
     <!-- Include Mermaid.js -->
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
-        mermaid.initialize({ startOnLoad: true });
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
     </script>
 </head>
 <body>
@@ -144,8 +145,12 @@
                     <p>If you are experiencing severe relationship distress or concerns about safety, please seek professional help immediately.</p>
                 </div>
 
-                <!-- Other sections remain the same -->
+                <section>
+                    <h2>Understanding Relationship Dynamics</h2>
+                    <p>Relationships are intricate tapestries woven with emotions, experiences, and shared moments. Understanding the underlying dynamics can help you navigate challenges and strengthen your bond.</p>
+                </section>
 
+                <!-- Gottman Method -->
                 <section>
                     <h2>Gottman Method Perspective</h2>
                     <div class="approach-card">
@@ -155,72 +160,58 @@
                             <!-- Mermaid Diagram -->
                             <pre class="mermaid">
 graph TB
-    subgraph Trust_and_Commitment[Trust &amp; Commitment]
-        TC["'The Load-Bearing Walls'
-        • Being reliable in promises
-        • Prioritizing the relationship
-        • Fighting fair"]
+    %% Adjusted node styles to accommodate multi-line text
+    classDef levelStyle fill:#e6f3ff,stroke:#333,stroke-width:2px
+
+    subgraph Level1["Level 1: Build Love Maps"]
+        direction TB
+        LM["• Know partner's world\n• Remember details\nExample: Knowing partner's current worries"]
     end
 
-    subgraph Level7[Level 7: Create Shared Meaning]
-        SM["• Creating shared rituals
-        • Supporting each other's dreams
-        Example: Weekly family dinners"]
+    subgraph Level2["Level 2: Express Fondness & Admiration"]
+        direction TB
+        FA["• Show appreciation\n• Express respect\nExample: 'I'm proud of how hard you work'"]
     end
 
-    subgraph Level6[Level 6: Make Life Dreams Come True]
-        LD["• Honor each other's hopes
-        • Support aspirations
-        Example: Encouraging partner's career change"]
+    subgraph Level3["Level 3: Turn Towards"]
+        direction TB
+        TT["• Respond to 'bids' for connection\n• Show interest in partner\nExample: Engaging when partner shows you something"]
     end
 
-    subgraph Level5[Level 5: Manage Conflict]
-        MC["• Accept influence
-        • Compromise
-        • Be gentle
-        Example: Using 'I feel' statements"]
+    subgraph Level4["Level 4: Positive Perspective"]
+        direction TB
+        PP["• Maintain optimistic outlook\n• Give benefit of doubt\nExample: Seeing lateness as traffic, not inconsideration"]
     end
 
-    subgraph Level4[Level 4: Positive Perspective]
-        PP["• Maintain optimistic outlook
-        • Give benefit of doubt
-        Example: Seeing lateness as traffic, not inconsideration"]
+    subgraph Level5["Level 5: Manage Conflict"]
+        direction TB
+        MC["• Accept influence\n• Compromise\n• Be gentle\nExample: Using 'I feel' statements"]
     end
 
-    subgraph Level3[Level 3: Turn Towards]
-        TT["• Respond to 'bids' for connection
-        • Show interest in partner
-        Example: Engaging when partner shows you something"]
+    subgraph Level6["Level 6: Make Life Dreams Come True"]
+        direction TB
+        LD["• Honor each other's hopes\n• Support aspirations\nExample: Encouraging partner's career change"]
     end
 
-    subgraph Level2[Level 2: Express Fondness &amp; Admiration]
-        FA["• Show appreciation
-        • Express respect
-        Example: 'I'm proud of how hard you work'"]
+    subgraph Level7["Level 7: Create Shared Meaning"]
+        direction TB
+        SM["• Creating shared rituals\n• Supporting each other's dreams\nExample: Weekly family dinners"]
     end
 
-    subgraph Level1[Level 1: Build Love Maps]
-        LM["• Know partner's world
-        • Remember details
-        Example: Knowing partner's current worries"]
+    subgraph Trust_and_Commitment["Trust & Commitment"]
+        direction TB
+        TC["'The Load-Bearing Walls'\n• Being reliable in promises\n• Prioritizing the relationship\n• Fighting fair"]
     end
 
-    Trust_and_Commitment --> Level7
-    Level7 --> Level6
-    Level6 --> Level5
-    Level5 --> Level4
-    Level4 --> Level3
-    Level3 --> Level2
-    Level2 --> Level1
+    Level1 --> Level2
+    Level2 --> Level3
+    Level3 --> Level4
+    Level4 --> Level5
+    Level5 --> Level6
+    Level6 --> Level7
+    Level7 --> Trust_and_Commitment
 
-    style Trust_and_Commitment fill:#f9f,stroke:#333,stroke-width:4px
-    style Level7 fill:#e6f3ff,stroke:#333,stroke-width:2px
-    style Level6 fill:#cce6ff,stroke:#333,stroke-width:2px
-    style Level5 fill:#b3d9ff,stroke:#333,stroke-width:2px
-    style Level4 fill:#99ccff,stroke:#333,stroke-width:2px
-    style Level3 fill:#80bfff,stroke:#333,stroke-width:2px
-    style Level2 fill:#66b3ff,stroke:#333,stroke-width:2px
-    style Level1 fill:#4da6ff,stroke:#333,stroke-width:2px
+    class Level1,Level2,Level3,Level4,Level5,Level6,Level7,Trust_and_Commitment levelStyle
                             </pre>
                             <p><em>The Sound Relationship House Model</em></p>
                         </div>
@@ -231,8 +222,90 @@ graph TB
                     </div>
                 </section>
 
-                <!-- Other sections remain the same -->
+                <!-- Attachment Theory -->
+                <section>
+                    <h2>Attachment Theory Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Understanding Emotional Bonds</h3>
+                        <p>Attachment Theory explores how our early relationships with caregivers shape our attachment styles, which influence our adult relationships.</p>
+                        <div class="quote">
+                            <p>"The attachment bond is the emotional connection formed by wordless communication between an infant and their primary caretaker." - Dr. Amir Levine</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Think of attachment styles as the blueprint for how we connect with others. Recognizing your blueprint can help you make conscious changes in your relationships.</p>
+                        <p><strong>Examples of Attachment Styles:</strong></p>
+                        <ul>
+                            <li><strong>Secure Attachment:</strong> Comfortable with intimacy and autonomy.</li>
+                            <li><strong>Anxious Attachment:</strong> Craves closeness but worries about rejection.</li>
+                            <li><strong>Avoidant Attachment:</strong> Values independence and may avoid closeness.</li>
+                            <li><strong>Disorganized Attachment:</strong> Combination of anxious and avoidant behaviors.</li>
+                        </ul>
+                    </div>
+                </section>
 
+                <!-- Five Love Languages -->
+                <section>
+                    <h2>The Five Love Languages</h2>
+                    <div class="approach-card">
+                        <h3>Expressing and Receiving Love</h3>
+                        <p>Developed by Dr. Gary Chapman, the Five Love Languages help partners understand how they and their significant others prefer to give and receive love.</p>
+                        <div class="quote">
+                            <p>"Love is a choice you make every day." - Gary Chapman</p>
+                        </div>
+                        <p><strong>The Five Love Languages:</strong></p>
+                        <ul>
+                            <li><strong>Words of Affirmation:</strong> Verbal expressions of appreciation.</li>
+                            <li><strong>Acts of Service:</strong> Actions speak louder than words.</li>
+                            <li><strong>Receiving Gifts:</strong> Thoughtful tokens of love.</li>
+                            <li><strong>Quality Time:</strong> Undivided attention.</li>
+                            <li><strong>Physical Touch:</strong> Affection through touch.</li>
+                        </ul>
+                        <p><strong>Metaphor:</strong> Love languages are like different dialects; understanding your partner's dialect enables better communication and connection.</p>
+                    </div>
+                </section>
+
+                <!-- Imago Relationship Therapy -->
+                <section>
+                    <h2>Imago Relationship Therapy Perspective</h2>
+                    <div class="approach-card">
+                        <h3>Healing and Growth Through Relationships</h3>
+                        <p>Imago Therapy suggests that we unconsciously choose partners who reflect our unresolved issues, offering an opportunity for healing.</p>
+                        <div class="quote">
+                            <p>"Conflict is growth trying to happen." - Harville Hendrix</p>
+                        </div>
+                        <p><strong>Metaphor:</strong> Relationships are like a dance; becoming aware of the steps allows you to move together harmoniously.</p>
+                        <p><strong>Example:</strong> Noticing recurring arguments may highlight personal wounds that need attention.</p>
+                    </div>
+                </section>
+
+                <!-- Practical Strategies -->
+                <section>
+                    <h2>Practical Strategies for Enhancing Relationships</h2>
+                    <ul>
+                        <li><strong>Communication Exercises:</strong> Practice active listening and mirroring to ensure understanding.</li>
+                        <li><strong>Love Map Building:</strong> Spend time learning about your partner's inner world.</li>
+                        <li><strong>Shared Activities:</strong> Engage in activities that both enjoy to strengthen your bond.</li>
+                        <li><strong>Emotional Check-ins:</strong> Regularly discuss feelings and needs openly.</li>
+                        <li><strong>Appreciation Rituals:</strong> Create routines to express gratitude towards each other.</li>
+                    </ul>
+                </section>
+
+                <!-- Additional Resources -->
+                <section>
+                    <h2>Additional Resources</h2>
+                    <p>For more information and support, consider exploring the following:</p>
+                    <ul>
+                        <li><a href="https://www.gottman.com/">The Gottman Institute: Research-Based Approach to Relationships</a></li>
+                        <li><a href="https://www.harvilleandhelen.com/">Harville Hendrix & Helen LaKelly Hunt: Imago Relationship Therapy</a></li>
+                        <li><a href="https://www.5lovelanguages.com/">The Five Love Languages</a></li>
+                        <li><a href="https://attachment.personaldevelopmentschool.com/">Attachment Theory Resources</a></li>
+                    </ul>
+                </section>
+
+                <!-- Final Thoughts -->
+                <section>
+                    <h2>Final Thoughts</h2>
+                    <p>Every relationship is a journey filled with opportunities for growth and connection. By understanding different perspectives and applying practical strategies, you can enhance your relationship and build a fulfilling partnership.</p>
+                </section>
             </article>
         </div>
     </main>
