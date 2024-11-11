@@ -1,266 +1,107 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<style>
+    /* Navigation Styles */
+    .header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
 
-:root {
-    --primary-color: #2c5282;    /* Deep blue - trust, professionalism */
-    --secondary-color: #4a5568;  /* Muted gray - balance */
-    --accent-color: #68d391;     /* Soft green - growth, healing */
-    --text-color: #2d3748;       /* Dark gray for text */
-    --background-color: #f7fafc; /* Light gray background */
-    --white: #ffffff;
-    --max-width: 1200px;
-    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
+    .site-title {
+        color: #2b4c7e;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
 
-/* Layout */
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    .nav-menu {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-main {
-    padding: 3rem 0;
-    min-height: calc(100vh - 180px);
-    animation: fadeIn 0.5s ease-in;
-}
+    .nav-menu a {
+        color: #2b4c7e;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.5rem;
+        transition: color 0.3s ease;
+    }
 
-/* Typography */
-h1 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    margin: 0;
-}
+    .nav-menu a:hover {
+        color: #1a365d;
+    }
 
-h2 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
+    /* Article Content Styles */
+    .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
 
-h3 {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
+    .article-content h1,
+    .article-content h2,
+    .article-content h3 {
+        color: #2b4c7e;
+    }
 
-h4 {
-    color: var(--primary-color);
-    margin: 1.5rem 0 0.5rem;
-    font-size: 1.2rem;
-}
+    .article-content p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
 
-p {
-    margin-bottom: 1.2rem;
-    line-height: 1.8;
-}
+    .quote {
+        font-style: italic;
+        background-color: #f9f9f9;
+        border-left: 4px solid #2b4c7e;
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
 
-/* Header and Navigation */
-header {
-    background-color: var(--white);
-    box-shadow: var(--shadow);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: 500;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 1.5rem 0;
-    margin-top: auto;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
-
-/* About Page Styles */
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.profile-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin: 0 auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-.contact-info {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    margin: 2rem 0;
-    width: 100%;
-}
-
-/* Resource Grid and Cards */
-.resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.resource-card {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    text-decoration: none;
-    color: var(--text-color);
-    transition: transform 0.3s ease;
-}
-
-.resource-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Article Styles */
-.article-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: var(--white);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.article-section {
-    margin-bottom: 2.5rem;
-}
-
-.info-box, .example-box, .strategy-box {
-    background: var(--background-color);
-    border-left: 4px solid var(--primary-color);
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 0 8px 8px 0;
-}
-
-.example-box {
-    border-left-color: var(--accent-color);
-}
-
-.strategy-box {
-    border-left-color: var(--secondary-color);
-}
-
-/* Diagrams */
-.diagram {
-    background: var(--white);
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.diagram svg {
-    width: 100%;
-    height: auto;
-}
-
-.diagram text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-
-.diagram-caption {
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-    margin-top: 1rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
+    .model-diagram {
         text-align: center;
-    }
-    
-    nav ul {
-        margin-top: 1rem;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    h1 { font-size: 1.5rem; }
-    
-    main { padding: 2rem 0; }
-    
-    .profile-image { max-width: 250px; }
-    
-    .about-content { padding: 0 1rem; }
-    
-    .article-content { padding: 1rem; }
-    
-    .info-box, .example-box, .strategy-box {
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-    
-    .diagram {
-        padding: 1rem;
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 
-    .diagram svg text {
-        font-size: 12px;
+    /* Updated Styles for Mermaid Diagram */
+    .model-diagram pre {
+        text-align: left;
+        display: block; /* Changed from inline-block to block */
+        overflow-x: auto; /* Added for horizontal scrolling if needed */
     }
-}
+
+    /* Mermaid Diagram Styles */
+    .mermaid {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .model-diagram .mermaid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .approach-card {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 2rem;
+        margin: 1.5rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .approach-card h3 {
+       
