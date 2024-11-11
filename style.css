@@ -316,3 +316,63 @@ footer p {
 main {
   animation: fadeIn 0.5s ease-in;
 }
+/* Add these styles to your style.css file */
+
+.info-box, .example-box, .strategy-box {
+    background: var(--background-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.example-box {
+    border-left-color: var(--accent-color);
+}
+
+.strategy-box {
+    border-left-color: var(--secondary-color);
+}
+
+.diagram {
+    background: var(--white);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.diagram h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.diagram svg {
+    width: 100%;
+    height: auto;
+}
+
+.diagram text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.article-section h4 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+    .info-box, .example-box, .strategy-box {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .diagram {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+}
