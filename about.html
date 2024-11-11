@@ -3,108 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Evan Finnamore</title>
+    <meta name="description" content="About Evan Finnamore - Mental Health Resources and Support">
+    <title>About Me | Mental Health Resources</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mental Health Resources</h1>
-            <nav>
-                <ul>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="site-title">Mental Health Resources</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html" aria-current="page">About Me</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="#emergency-resources" class="nav-emergency">Get Help Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container about-content">
-            <h2>About Me</h2>
-            <img src="images/profile-evan.jpg" alt="Evan Finnamore" class="profile-image">
+    <main id="main-content">
+        <div class="container">
+            <article class="about-content">
+                <h1>About Me</h1>
+                
+                <section class="profile-section">
+                    <img src="images/profile-evan.jpg" alt="Evan Finnamore" class="profile-image">
+                    <div class="contact-info info-box">
+                        <h2>Contact Information</h2>
+                        <ul>
+                            <li>
+                                <strong>Phone:</strong>
+                                <a href="tel:6048979106">(604) 897-9106</a>
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                <a href="mailto:evan.finnamore@gmail.com">evan.finnamore@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Phone: (604) 897-9106</p>
-                <p>Email: evan.finnamore@gmail.com</p>
-            </div>
+                <section class="bio-section">
+                    <h2>My Story</h2>
+                    <div class="content-box">
+                        <p>[Your personal story and journey goes here]</p>
+                    </div>
+                </section>
 
-            <div class="bio-section">
-                <h3>My Story</h3>
-                <p>[Your personal story and journey goes here]</p>
-            </div>
+                <section class="credentials-section">
+                    <h2>Education & Credentials</h2>
+                    <div class="content-box">
+                        <!-- Add your credentials here -->
+                    </div>
+                </section>
+            </article>
+
+            <section id="emergency-resources" class="emergency-resources">
+                <h2>Need Immediate Help?</h2>
+                <div class="emergency-box">
+                    <p><strong>24/7 Crisis Support Services:</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Crisis Services Canada:</strong>
+                            <a href="tel:1-833-456-4566">1-833-456-4566</a>
+                        </li>
+                        <li>
+                            <strong>Emergency Services:</strong>
+                            <a href="tel:911">911</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-<!-- resources.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Resources | Evan Finnamore</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
         <div class="container">
-            <h1>Mental Health Resources</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="resources.html">Resources</a></li>
+            <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-nav">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h2>Mental Health Resources</h2>
-            
-            <section id="anxiety" class="resource-section">
-                <h3>Anxiety</h3>
-                <div class="article-grid">
-                    <a href="articles/understanding-anxiety.html" class="article-card">
-                        <h4>Understanding Anxiety</h4>
-                        <p>Learn about the different types of anxiety and their symptoms</p>
-                    </a>
-                    <!-- Add more anxiety-related articles -->
-                </div>
-            </section>
-
-            <section id="depression" class="resource-section">
-                <h3>Depression</h3>
-                <div class="article-grid">
-                    <a href="articles/coping-with-depression.html" class="article-card">
-                        <h4>Coping with Depression</h4>
-                        <p>Practical strategies for managing depression</p>
-                    </a>
-                    <!-- Add more depression-related articles -->
-                </div>
-            </section>
-
-            <!-- Add more resource sections as needed -->
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
     </footer>
 </body>
 </html>
