@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | Evan Finnamore Counselling Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resources | Evan Finnamore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Mental Health Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Evan Finnamore Counselling Services</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Me</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./appointment.html">Book Appointment</a></li>
-          <li><a href="./links.html">Useful Links</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main>
+        <div class="container">
+            <h2>Mental Health Resources</h2>
+            <p>Access comprehensive, evidence-based information about various mental health topics. Each article includes theoretical frameworks, practical strategies, and relevant Canadian support resources.</p>
 
-  <!-- Main Content -->
-  <main>
-    <div class="container">
-      <h2>Services</h2>
-      <ul>
-        <li>Individual Counseling</li>
-        <li>Couples Therapy</li>
-        <li>Family Counseling</li>
-        <!-- Add more services as needed -->
-      </ul>
-    </div>
-  </main>
+            <section id="anxiety" class="resource-section">
+                <h3>Anxiety Resources</h3>
+                <div class="article-grid">
+                    <a href="articles/anxiety-overview.html" class="article-card">
+                        <h4>Understanding Anxiety</h4>
+                        <p>Explore anxiety through evolutionary, cognitive, and therapeutic perspectives</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Evan Finnamore Counselling Services. All rights reserved.</p>
-    </div>
-  </footer>
+            <section id="depression" class="resource-section">
+                <h3>Depression Resources</h3>
+                <div class="article-grid">
+                    <a href="articles/depression-overview.html" class="article-card">
+                        <h4>Understanding Depression</h4>
+                        <p>Learn about depression through neuroscience and evidence-based treatments</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </section>
 
+            <section id="grief" class="resource-section">
+                <h3>Grief and Loss Resources</h3>
+                <div class="article-grid">
+                    <a href="articles/grief-loss.html" class="article-card">
+                        <h4>Coping with Grief and Loss</h4>
+                        <p>Understanding grief through research-supported models and approaches</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="substance-use" class="resource-section">
+                <h3>Substance Use Resources</h3>
+                <div class="article-grid">
+                    <a href="articles/substance-use-support.html" class="article-card">
+                        <h4>Understanding Substance Use</h4>
+                        <p>Evidence-based information about substance use and recovery paths</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="marriage" class="resource-section">
+                <h3>Marriage Resources</h3>
+                <div class="article-grid">
+                    <a href="articles/marriage-issues.html" class="article-card">
+                        <h4>Marriage Issues</h4>
+                        <p>Research-based approaches to common relationship challenges</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="crisis-resources">
+                <h3>Crisis Resources</h3>
+                <div class="info-box emergency-box">
+                    <p><strong>24/7 Support Services:</strong></p>
+                    <ul>
+                        <li>Crisis Services Canada: 1-833-456-4566</li>
+                        <li>Emergency Services: 911</li>
+                        <li>Canadian Mental Health Association: <a href="https://cmha.ca" target="_blank">www.cmha.ca</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+    </footer>
 </body>
 </html>
