@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evidence-based mental health resources and information provided by Evan Finnamore">
     <title>Mental Health Resources | Evan Finnamore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,65 +11,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mental Health Resources</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="site-title">Mental Health Resources</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="#emergency-resources" class="nav-emergency">Get Help Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="container">
-            <h2>Welcome to Your Mental Health Journey</h2>
-            <p>Find evidence-based resources and practical insights to support your mental health and wellbeing. Each topic is carefully researched and presented with clear explanations, visual aids, and practical strategies.</p>
+            <section class="hero-section">
+                <h1>Welcome to Your Mental Health Journey</h1>
+                <p class="lead">Find evidence-based resources and practical insights to support your mental health and wellbeing. Each topic is carefully researched and presented with clear explanations, visual aids, and practical strategies.</p>
+            </section>
 
-            <div class="featured-resources">
-                <h3>Evidence-Based Resources By Topic</h3>
+            <section class="featured-resources">
+                <h2>Evidence-Based Resources By Topic</h2>
                 <div class="resource-grid">
-                    <a href="articles/anxiety-overview.html" class="resource-card">
-                        <h4>Anxiety</h4>
+                    <article class="article-card">
+                        <h3>Anxiety</h3>
                         <p>Understanding anxiety through biological, cognitive, and behavioral perspectives</p>
-                    </a>
-                    <a href="articles/depression-overview.html" class="resource-card">
-                        <h4>Depression</h4>
-                        <p>Exploring depression through neuroscience and proven therapeutic approaches</p>
-                    </a>
-                    <a href="articles/grief-loss.html" class="resource-card">
-                        <h4>Grief and Loss</h4>
-                        <p>Understanding the grief process and finding healthy ways to cope</p>
-                    </a>
-                    <a href="articles/substance-use-support.html" class="resource-card">
-                        <h4>Substance Use</h4>
-                        <p>Research-based information about substance use and recovery</p>
-                    </a>
-                    <a href="articles/marriage-issues.html" class="resource-card">
-                        <h4>Marriage Issues</h4>
-                        <p>Understanding and addressing common relationship challenges</p>
-                    </a>
-                </div>
-            </div>
+                        <a href="articles/anxiety-overview.html" class="read-more">Read More →</a>
+                    </article>
 
-            <div class="emergency-resources">
-                <h3>Need Immediate Help?</h3>
-                <div class="info-box emergency-box">
-                    <p><strong>24/7 Crisis Support:</strong></p>
+                    <article class="article-card">
+                        <h3>Depression</h3>
+                        <p>Exploring depression through neuroscience and proven therapeutic approaches</p>
+                        <a href="articles/depression-overview.html" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Grief and Loss</h3>
+                        <p>Understanding the grief process and finding healthy ways to cope</p>
+                        <a href="articles/grief-loss.html" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Substance Use</h3>
+                        <p>Research-based information about substance use and recovery</p>
+                        <a href="articles/substance-use-support.html" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Marriage Issues</h3>
+                        <p>Understanding and addressing common relationship challenges</p>
+                        <a href="articles/marriage-issues.html" class="read-more">Read More →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="emergency-resources" class="emergency-resources">
+                <h2>Need Immediate Help?</h2>
+                <div class="emergency-box">
+                    <p><strong>24/7 Crisis Support Services:</strong></p>
                     <ul>
-                        <li>Crisis Services Canada: 1-833-456-4566</li>
-                        <li>Emergency Services: 911</li>
+                        <li>
+                            <strong>Crisis Services Canada:</strong>
+                            <a href="tel:1-833-456-4566">1-833-456-4566</a>
+                        </li>
+                        <li>
+                            <strong>Emergency Services:</strong>
+                            <a href="tel:911">911</a>
+                        </li>
+                        <li>
+                            <strong>Canadian Mental Health Association:</strong>
+                            <a href="https://cmha.ca" target="_blank" rel="noopener noreferrer">
+                                www.cmha.ca
+                                <span class="sr-only">(Opens in new window)</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-nav">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
