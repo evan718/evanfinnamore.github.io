@@ -50,7 +50,9 @@ h1 { font-size: 2.5rem; font-weight: 700; }
 h2 { font-size: 2rem; font-weight: 600; }
 h3 { font-size: 1.75rem; font-weight: 600; }
 h4 { font-size: 1.5rem; font-weight: 600; }
-p { margin-bottom: 1.5rem; }
+p {
+  margin-bottom: 1.5rem;
+}
 
 /* Container */
 .container {
@@ -202,9 +204,21 @@ p { margin-bottom: 1.5rem; }
   margin: 2rem 0;
   text-align: center;
 }
+
+/* NEW: Ensure larger, more readable text inside SVGs */
+svg text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Increase as needed */
+  font-weight: 600; /* Bolder text for visibility */
+}
+
+/* NEW: Make the diagrams responsive and larger by default */
 .model-diagram svg {
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
   height: auto;
+  display: block;
+  margin: 1.5rem 0;
 }
 
 /* Footer */
