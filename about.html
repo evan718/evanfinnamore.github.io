@@ -1,157 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Evan Finnamore - Mental Health Counselor and Resource Provider">
-    <title>About Me | Mental Health Resources</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Additional styles for the about page */
-        .profile-section {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-            margin: 2rem 0;
-            align-items: start;
-        }
-
-        .profile-image-container {
-            position: relative;
-        }
-
-        .profile-image {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .bio-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .quote {
-            font-style: italic;
-            color: var(--primary);
-            font-size: 1.25rem;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background-color: #f8fafc;
-            border-left: 4px solid var(--primary);
-        }
-
-        .quote-author {
-            font-size: 1rem;
-            color: var(--text-light);
-            margin-top: 0.5rem;
-        }
-
-        .credentials {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
-        }
-
-        .credentials h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .contact-section {
-            margin-top: 3rem;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 768px) {
-            .profile-section {
-                grid-template-columns: 1fr;
-            }
-
-            .profile-image {
-                max-width: 250px;
-                margin: 0 auto;
-                display: block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Evan Finnamore - Mental Health Counselor and Resource Provider">
+  <meta property="og:title" content="About Evan Finnamore | Mental Health Resources">
+  <meta property="og:description" content="Learn more about Evan Finnamore, his background, credentials, and approach to mental health.">
+  <meta property="og:image" content="https://yourdomain.com/images/Evan-Headshot.jpg">
+  <meta property="og:url" content="https://yourdomain.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>About Me | Mental Health Resources</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Additional styles for the About page */
+    .profile-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      margin: 2rem 0;
+      align-items: start;
+    }
+    .profile-image-container {
+      position: relative;
+    }
+    .profile-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .bio-content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .quote {
+      font-style: italic;
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary);
+    }
+    .quote-author {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-top: 0.5rem;
+    }
+    .credentials {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+    .credentials h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .contact-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+      .profile-section {
+        grid-template-columns: 1fr;
+      }
+      .profile-image {
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <a href="index.html" class="site-title">Mental Health Resources</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" aria-current="page">About Me</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                </ul>
-            </nav>
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="site-title">Mental Health Resources</a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About Me</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <article class="about-content">
+        <h1>About Me</h1>
+        <div class="profile-section">
+          <div class="profile-image-container">
+            <img src="images/Evan Headshot.jpg" alt="Evan Finnamore" class="profile-image">
+          </div>
+          <div class="bio-content">
+            <div class="quote">
+              "The greatest glory in living lies not in never falling, but in rising every time we fall."
+              <div class="quote-author">– Nelson Mandela</div>
+            </div>
+            <p>Welcome to a space dedicated to understanding, healing, and growth. My journey in the field of mental health is deeply intertwined with personal experiences and a passion for helping others. With an undergraduate degree in Kinesiology and a graduate degree in Rehabilitation Sciences from the University of British Columbia, I have explored the profound connections between physical well-being and mental health. Now, as I embark on the final year of my Master's in Counselling Psychology, I am excited to become a registered clinical counsellor.</p>
+            <p>Having faced my own challenges with mental health, I understand the courage it takes to seek help and the strength required to pursue change. These experiences have shaped my empathetic approach and commitment to providing a supportive environment where you feel heard and understood.</p>
+            <div class="quote">
+              "The curious paradox is that when I accept myself just as I am, then I can change."
+              <div class="quote-author">– Carl Rogers</div>
+            </div>
+            <p>My goal is to empower you with the tools and insights to better understand yourself and navigate your journey toward well-being. Together, we can transform obstacles into opportunities for personal growth.</p>
+            <p>Change is not only possible but within your reach. As Viktor E. Frankl wisely said, "When we are no longer able to change a situation, we are challenged to change ourselves." I am here to support you in embracing this challenge, fostering hope, and building a future where you feel confident in your ability to thrive.</p>
+            <p>I invite you to explore the resources available and join a community committed to healing and positive change. Let's embark on this journey together toward a hopeful and fulfilling future.</p>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <article class="about-content">
-                <h1>About Me</h1>
-                
-                <div class="profile-section">
-                    <div class="profile-image-container">
-                        <img src="images/Evan Headshot.jpg" alt="Evan Finnamore" class="profile-image">
-                    </div>
-                    
-                    <div class="bio-content">
-                        <div class="quote">
-                            "The greatest glory in living lies not in never falling, but in rising every time we fall."
-                            <div class="quote-author">– Nelson Mandela</div>
-                        </div>
-
-                        <p>Welcome to a space dedicated to understanding, healing, and growth. My journey in the field of mental health is deeply intertwined with personal experiences and a passion for helping others. With an undergraduate degree in Kinesiology and a graduate degree in Rehabilitation Sciences from the University of British Columbia, I have explored the profound connections between physical well-being and mental health. Now, as I embark on the final year of my Master's in Counselling Psychology, I am excited to become a registered clinical counsellor.</p>
-
-                        <p>Having faced my own challenges with mental health, I understand the courage it takes to seek help and the strength required to pursue change. These experiences have shaped my empathetic approach and commitment to providing a supportive environment where you feel heard and understood.</p>
-
-                        <div class="quote">
-                            "The curious paradox is that when I accept myself just as I am, then I can change."
-                            <div class="quote-author">– Carl Rogers</div>
-                        </div>
-
-                        <p>My goal is to empower you with the tools and insights to better understand yourself and navigate your journey toward well-being. Together, we can transform obstacles into opportunities for personal growth.</p>
-
-                        <p>Change is not only possible but within your reach. As Viktor E. Frankl wisely said, "When we are no longer able to change a situation, we are challenged to change ourselves." I am here to support you in embracing this challenge, fostering hope, and building a future where you feel confident in your ability to thrive.</p>
-
-                        <p>I invite you to explore the resources available and join a community committed to healing and positive change. Let's embark on this journey together toward a hopeful and fulfilling future.</p>
-                    </div>
-                </div>
-
-                <div class="credentials">
-                    <h3>Education & Credentials</h3>
-                    <ul>
-                        <li>Master's in Counselling Psychology (In Progress)</li>
-                        <li>Graduate Degree in Rehabilitation Sciences - University of British Columbia</li>
-                        <li>Bachelor's Degree in Kinesiology - University of British Columbia</li>
-                    </ul>
-                </div>
-
-                <div class="contact-section">
-                    <h2>Contact Information</h2>
-                    <p><strong>Phone:</strong> <a href="tel:6048979106">(604) 897-9106</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:evan.finnamore@gmail.com">evan.finnamore@gmail.com</a></p>
-                </div>
-            </article>
+        <div class="credentials">
+          <h3>Education & Credentials</h3>
+          <ul>
+            <li>Master's in Counselling Psychology (In Progress)</li>
+            <li>Graduate Degree in Rehabilitation Sciences - University of British Columbia</li>
+            <li>Bachelor's Degree in Kinesiology - University of British Columbia</li>
+          </ul>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
-    </footer>
+        <div class="contact-section">
+          <h2>Contact Information</h2>
+          <p><strong>Phone:</strong> <a href="tel:6048979106">(604) 897-9106</a></p>
+          <p><strong>Email:</strong> <a href="mailto:evan.finnamore@gmail.com">evan.finnamore@gmail.com</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Evan Finnamore. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
