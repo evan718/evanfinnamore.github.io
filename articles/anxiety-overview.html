@@ -14,6 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Optional: Ensure consistent font-family in SVG text */
+    svg text { font-family: 'Open Sans', sans-serif; }
+  </style>
 </head>
 <body>
   <!-- Skip Link -->
@@ -42,33 +46,34 @@
         <!-- Introduction Section -->
         <section class="article-section">
           <h3>What Is Anxiety?</h3>
-          <p>Anxiety is a natural response to stress and uncertainty. It can manifest as feelings of nervousness, worry, or fear—even when there is no immediate danger. While occasional anxiety is normal, persistent or overwhelming anxiety can interfere with your daily life. Research from the <em>American Psychological Association</em> shows that anxiety disorders affect millions of people worldwide.</p>
+          <p>Anxiety is a natural response to stress and uncertainty. It can manifest as feelings of nervousness, worry, or fear—even when no immediate danger is present. Although a certain degree of anxiety is normal, persistent or overwhelming anxiety can disrupt daily life. Research from sources such as the <em>American Psychological Association</em> highlights that anxiety disorders affect millions worldwide.</p>
           <blockquote>"Anxiety does not empty tomorrow of its sorrows, but only empties today of its strength." – Charles Spurgeon</blockquote>
         </section>
         
         <!-- Evolutionary Perspective Section -->
         <section class="article-section">
           <h3>The Evolutionary Perspective on Anxiety</h3>
-          <p>From an evolutionary standpoint, anxiety is an adaptive response. Our ancestors used anxiety to detect threats and respond quickly in dangerous situations—a mechanism known as the "fight-or-flight" response. This response prepared the body for rapid action, ensuring survival in hostile environments.</p>
+          <p>Evolutionarily, anxiety is an adaptive response designed to help our ancestors detect danger and respond quickly in life‐threatening situations. This “fight-or-flight” response increased survival by preparing the body for rapid action.</p>
           <div class="info-box">
             <h4>Key Evolutionary Functions of Anxiety:</h4>
             <ul>
-              <li><strong>Threat Detection:</strong> Increased awareness to potential dangers.</li>
+              <li><strong>Threat Detection:</strong> Heightened awareness to spot potential dangers.</li>
               <li><strong>Survival Response:</strong> Activation of rapid physiological changes (e.g., increased heart rate, adrenaline release).</li>
-              <li><strong>Learning:</strong> Enhanced memory of threatening situations to avoid future harm.</li>
+              <li><strong>Learning:</strong> Enhanced memory of threatening events to avoid future risks.</li>
             </ul>
           </div>
           <div class="model-diagram">
             <h4>Visualizing the Fight-or-Flight Response</h4>
+            <!-- Adjusted viewBox ensures margins around content -->
             <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-              <!-- Three circles representing stages -->
+              <!-- Draw circles with centered text -->
               <circle cx="100" cy="200" r="50" fill="#68d391"/>
               <text x="100" y="205" text-anchor="middle" fill="#000" font-size="14">Threat Detection</text>
               <circle cx="300" cy="200" r="50" fill="#4a5568"/>
               <text x="300" y="205" text-anchor="middle" fill="#fff" font-size="14">Physical Response</text>
               <circle cx="500" cy="200" r="50" fill="#2c5282"/>
               <text x="500" y="205" text-anchor="middle" fill="#fff" font-size="14">Fight or Flight</text>
-              <!-- Arrows -->
+              <!-- Arrows between circles -->
               <line x1="150" y1="200" x2="250" y2="200" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
               <line x1="350" y1="200" x2="450" y2="200" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
               <defs>
@@ -83,17 +88,18 @@
         <!-- CBT Perspective Section -->
         <section class="article-section">
           <h3>Cognitive Behavioral Therapy (CBT) Perspective</h3>
-          <p>CBT is a well-researched approach that helps clients understand how their thoughts, feelings, and behaviors interact. By identifying and challenging negative thought patterns, individuals can reduce their anxiety and improve their emotional well-being.</p>
+          <p>CBT is a widely researched approach that helps clients understand the interconnection between their thoughts, feelings, and behaviors. By recognizing and challenging negative thought patterns, you can reduce anxiety and improve emotional well‐being.</p>
           <div class="model-diagram">
             <h4>The CBT Triangle Model</h4>
+            <!-- Increase margins in viewBox to avoid clipping text -->
             <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
               <!-- Triangle outline -->
               <polygon points="200,50 50,350 350,350" fill="none" stroke="#2c5282" stroke-width="3"/>
-              <!-- Vertex labels -->
+              <!-- Adjusted vertex labels for margin -->
               <text x="200" y="30" text-anchor="middle" fill="#2c5282" font-size="14">Negative Thoughts</text>
-              <text x="30" y="370" text-anchor="middle" fill="#2c5282" font-size="14">Negative Feelings</text>
-              <text x="370" y="370" text-anchor="middle" fill="#2c5282" font-size="14">Unhelpful Behaviors</text>
-              <!-- Optional arrows to show interconnection -->
+              <text x="40" y="380" text-anchor="middle" fill="#2c5282" font-size="14">Negative Feelings</text>
+              <text x="360" y="380" text-anchor="middle" fill="#2c5282" font-size="14">Unhelpful Behaviors</text>
+              <!-- Arrows indicating interconnection -->
               <line x1="200" y1="50" x2="100" y2="320" stroke="#2c5282" stroke-width="2" marker-end="url(#arrow)"/>
               <line x1="100" y1="320" x2="300" y2="320" stroke="#2c5282" stroke-width="2" marker-end="url(#arrow)"/>
               <line x1="300" y1="320" x2="200" y2="50" stroke="#2c5282" stroke-width="2" marker-end="url(#arrow)"/>
@@ -103,31 +109,32 @@
                 </marker>
               </defs>
             </svg>
-            <p><em>Changing negative thoughts can alleviate negative feelings and reduce unhelpful behaviors.</em></p>
+            <p><em>By challenging negative thoughts, you can lessen negative feelings and reduce unhelpful behaviors.</em></p>
           </div>
           <div class="example-box">
             <h4>Example: Public Speaking Anxiety</h4>
             <ul>
-              <li><strong>Triggering Event:</strong> An upcoming presentation</li>
+              <li><strong>Trigger:</strong> An upcoming presentation</li>
               <li><strong>Negative Thought:</strong> "I will embarrass myself"</li>
               <li><strong>Negative Feeling:</strong> Intense anxiety and fear</li>
               <li><strong>Unhelpful Behavior:</strong> Avoidance or over-preparation</li>
               <li><strong>Adaptive Thought:</strong> "I can prepare well and manage this challenge"</li>
             </ul>
-            <blockquote>"Our distress often originates not from the events themselves, but from our interpretation of them." – Aaron T. Beck</blockquote>
+            <blockquote>"Our distress often originates not from events themselves, but from our interpretation of them." – Aaron T. Beck</blockquote>
           </div>
         </section>
         
         <!-- Mindfulness and Acceptance Section -->
         <section class="article-section">
           <h3>Mindfulness and Acceptance Approaches</h3>
-          <p>Mindfulness-based strategies, such as those used in Acceptance and Commitment Therapy (ACT), teach you to observe your thoughts and feelings without judgment. This helps reduce the struggle against anxiety and promotes a greater sense of calm and acceptance.</p>
+          <p>Mindfulness-based strategies help you observe your thoughts and feelings without judgment. Approaches such as Acceptance and Commitment Therapy (ACT) teach you to acknowledge your experiences and let go of counterproductive reactions, fostering a sense of calm and clarity.</p>
           <div class="model-diagram">
             <h4>The Mindfulness Cycle</h4>
+            <!-- Adjusted viewBox and text coordinates to ensure all text is visible -->
             <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-              <!-- Circular diagram illustrating the mindfulness cycle -->
+              <!-- Circular diagram with extra margin (if needed, you could use a larger viewBox) -->
               <circle cx="200" cy="200" r="150" fill="none" stroke="#4a5568" stroke-width="3"/>
-              <text x="200" y="80" text-anchor="middle" fill="#4a5568" font-size="14">Observe</text>
+              <text x="200" y="70" text-anchor="middle" fill="#4a5568" font-size="14">Observe</text>
               <text x="70" y="220" text-anchor="middle" fill="#4a5568" font-size="14">Accept</text>
               <text x="330" y="220" text-anchor="middle" fill="#4a5568" font-size="14">Let Go</text>
               <!-- Arrows around the circle -->
@@ -141,14 +148,14 @@
                 </marker>
               </defs>
             </svg>
-            <p><em>By observing your internal experiences without judgment, you can learn to accept them and let go of counterproductive responses.</em></p>
+            <p><em>Observing your thoughts without judgment helps you accept your feelings and let go of unhelpful reactions.</em></p>
           </div>
           <div class="example-box">
             <h4>Mindfulness Practice Example</h4>
             <ul>
               <li>Find a quiet, comfortable space.</li>
-              <li>Focus on your breath, noticing the sensations as you inhale and exhale.</li>
-              <li>If anxious thoughts arise, simply acknowledge them and gently return your focus to your breathing.</li>
+              <li>Focus on your breath and notice the sensations as you inhale and exhale.</li>
+              <li>If anxious thoughts arise, acknowledge them and gently return your focus to your breathing.</li>
             </ul>
             <blockquote>"Mindfulness is a way of befriending ourselves and our experience." – Jon Kabat-Zinn</blockquote>
           </div>
@@ -157,14 +164,14 @@
         <!-- Practical Strategies Section -->
         <section class="article-section">
           <h3>Practical Strategies for Managing Anxiety</h3>
-          <p>Here are several evidence-based strategies to help you manage anxiety:</p>
+          <p>Below are several evidence-based techniques you can practice to manage anxiety:</p>
           <div class="strategy-box">
             <ul>
-              <li><strong>Deep Breathing:</strong> Use diaphragmatic breathing to calm your nervous system.</li>
+              <li><strong>Deep Breathing:</strong> Use diaphragmatic breathing to calm your body.</li>
               <li><strong>Cognitive Restructuring:</strong> Challenge and reframe negative thought patterns.</li>
-              <li><strong>Progressive Muscle Relaxation:</strong> Tense and relax muscle groups to reduce physical tension.</li>
-              <li><strong>Exposure Techniques:</strong> Gradually face feared situations to lessen avoidance.</li>
-              <li><strong>Regular Mindfulness Meditation:</strong> Build resilience by developing present-moment awareness.</li>
+              <li><strong>Progressive Muscle Relaxation:</strong> Systematically tense and relax muscle groups to release tension.</li>
+              <li><strong>Exposure Techniques:</strong> Gradually face your fears to reduce avoidance.</li>
+              <li><strong>Regular Mindfulness Meditation:</strong> Cultivate present-moment awareness to build resilience.</li>
             </ul>
           </div>
         </section>
@@ -172,15 +179,15 @@
         <!-- When to Seek Help Section -->
         <section class="article-section">
           <h3>When to Seek Professional Help</h3>
-          <p>If anxiety becomes overwhelming or persistent, interfering with your daily life, consider seeking help from a mental health professional. Therapy, medication, or a combination may be recommended based on your individual needs.</p>
+          <p>If anxiety becomes overwhelming or persistent—interfering with your daily life—consider seeking guidance from a mental health professional. Therapy, medication, or a combination may be recommended for your individual needs.</p>
         </section>
         
         <!-- Resources and Support Section -->
         <section class="article-section">
           <h3>Resources and Support</h3>
-          <p>For additional help, consider these resources:</p>
+          <p>For additional assistance, please consider the following resources:</p>
           <ul>
-            <li><strong>Crisis Services:</strong> If you are in immediate danger, call emergency services (911).</li>
+            <li><strong>Crisis Services:</strong> In an emergency, call 911.</li>
             <li><strong>Anxiety Canada:</strong> <a href="https://www.anxietycanada.com" target="_blank" rel="noopener">www.anxietycanada.com</a></li>
             <li><strong>Canadian Mental Health Association:</strong> <a href="https://cmha.ca" target="_blank" rel="noopener">www.cmha.ca</a></li>
           </ul>
