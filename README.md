@@ -28,10 +28,10 @@ This repository contains the updated source code for my mental health resources 
 1. Clone the repository.
 2. Open the HTML files in your browser or run a local server.
 3. For questions or issues, please contact:
-   - **Email:** evan.finnamore@gmail.com
-   - **Phone:** (604) 897-9106
+   - **Email:** 
+   - **Phone:** 
 
-© 2024 Evan Finnamore. All rights reserved.
+© 2024 Evan F. All rights reserved.
 
 * Visual explanations
 * Support resources
